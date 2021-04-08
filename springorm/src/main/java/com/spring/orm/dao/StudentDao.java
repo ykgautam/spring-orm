@@ -27,7 +27,7 @@ public class StudentDao {
 		return i;
 	}
 
-//	get single obj
+//	get single student object
 	public Student getStudent(int studentId) {
 		Student student = this.hibernateTemplate.get(Student.class, studentId);
 		return student;
@@ -40,7 +40,7 @@ public class StudentDao {
 		return students;
 	}
 
-//	delete data
+//	delete single student data
 	@Transactional
 	public void deleteStudent(int studentId) {
 		Student student = this.hibernateTemplate.get(Student.class, studentId);

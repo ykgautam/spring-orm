@@ -11,7 +11,7 @@
  http://www.springframework.org/schema/tx
  http://www.springframework.org/schema/tx/spring-tx.xsd
  ">
- <tx:annotation-driven/>
+	<tx:annotation-driven />
 
 	<bean
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
@@ -46,7 +46,6 @@
 				<value>com.spring.orm.entities.Student</value>
 			</list>
 		</property>
-
 	</bean>
 
 	<bean class="org.springframework.orm.hibernate5.HibernateTemplate"
